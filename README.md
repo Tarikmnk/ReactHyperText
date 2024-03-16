@@ -1,7 +1,8 @@
 # ReactHyperText
 
-ReactHyperText makes text clickable and colouored with given regexes. Regexes can be customize according to use cases. 
-\nRegexes test that is there username like @username, hashtag like #hashtag and url like http://...
+<p>ReactHyperText makes text clickable and colouored with given regexes. Regexes can be customize according to use cases. 
+
+<br>Regexes test that is there username like @username, hashtag like #hashtag and url like http://...<p>
 
 # Usage
     <ReactHyperText
