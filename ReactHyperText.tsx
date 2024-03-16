@@ -17,7 +17,7 @@ const regex = new RegExp(
   urlRegex.source + '|' + tagRegex.source + '|' + atRegex.source,
   'g',
 );
-const AnonimoText = (props: AnonimoTextProp) => {
+const HyperText = (props: HyperTextProp) => {
   let list: TextProp[] = [];
   let main = props.text;
   let matches = main.match(regex);
@@ -46,15 +46,7 @@ const AnonimoText = (props: AnonimoTextProp) => {
       list.push({
         text: item,
         isHyper: true,
-        onAction: () => {
-          let profileScreenParam: ProfileScreenParam = {
-            username: item,
-          };
-          navigate({
-            name: ScreenRoute.profileScreen,
-            params: profileScreenParam,
-          });
-        },
+        onAction: () => {}, // TODO - will call profile page
       });
     }
     main = splits[splits.length - 1];
@@ -98,12 +90,6 @@ type HyperTextProp = {
   style: TextStyle[];
   viewStyle?: ViewStyle | ViewStyle[];
 };
-
-enum HyperTextType {
-  LINK = 'http',
-  TAG = '#',
-  AT = '@',
-}
 
 type TextProp = {
   text: string;
