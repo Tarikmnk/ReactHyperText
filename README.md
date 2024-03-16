@@ -4,9 +4,9 @@
 
 Regexes match that there is 
 
-username like @username
-hashtag like #hashtag
-url like http://...
+<br>username like @username
+<br>hashtag like #hashtag
+<br>url like http://...
 
 in text and make them coloured and clickable
 <p>
