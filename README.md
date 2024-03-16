@@ -1,13 +1,14 @@
 # ReactHyperText
 
 <p>ReactHyperText makes text clickable and colouored with given regexes. Regexes can be customize according to use cases. 
-<br>Regexes match that there is 
 
-<br>username like @username
-<br>hashtag like #hashtag
-<br>url like http://...
+Regexes match that there is 
 
-<br>in text and make them coloured and clickable
+username like @username
+hashtag like #hashtag
+url like http://...
+
+in text and make them coloured and clickable
 <p>
 
 # Usage
