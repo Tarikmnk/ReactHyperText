@@ -22,7 +22,7 @@ const HyperText = (props: HyperTextProp) => {
   let main = props.text;
   let matches = main.match(regex);
 
-  matches?.forEach(item => {
+  matches?.forEach((item, index) => {
     let splits = main.split(item);
 
     list.push({
@@ -50,6 +50,13 @@ const HyperText = (props: HyperTextProp) => {
       });
     }
     main = splits[splits.length - 1];
+    if ((matches?.length ?? 0) - 1 === index) {
+      list.push({
+        text: main,
+        isHyper: false,
+        onAction: undefined,
+      });
+    }
   });
 
   if (list.length === 0) {
